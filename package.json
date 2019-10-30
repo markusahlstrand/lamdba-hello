@@ -1,0 +1,24 @@
+{
+  "name": "lamdba-hello",
+  "version": "1.0.0",
+  "description": "A minimal test app for aws lambda",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy --aws-profile pragmatec",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markusahlstrand/lamdba-hello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markusahlstrand/lamdba-hello/issues"
+  },
+  "homepage": "https://github.com/markusahlstrand/lamdba-hello#readme",
+  "devDependencies": {
+    "serverless-deployment-bucket": "1.1.0",
+    "serverless-offline": "5.12.0"
+  }
+}

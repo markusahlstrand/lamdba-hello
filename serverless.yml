@@ -1,0 +1,20 @@
+service: lambda-hello
+app: lamdba-hello
+org: markusahlstrand
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  deploymentBucket:
+    name: cp-lamda-hello-deployment-bucket
+    serverSideEncryption: AES256
+plugins:
+  - serverless-offline
+  - serverless-deployment-bucket
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
