@@ -19,6 +19,6 @@
   "homepage": "https://github.com/markusahlstrand/lamdba-hello#readme",
   "devDependencies": {
     "serverless-deployment-bucket": "1.1.0",
-    "serverless-offline": "5.12.0"
+    "serverless-offline": "12.0.3"
   }
 }
